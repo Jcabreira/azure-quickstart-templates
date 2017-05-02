@@ -1,4 +1,4 @@
-# Create a SQL Server 2014 Always On Availability Group in an existing Azure VNET and an existing Active Directory instance
+# Create a SQL Server 2014 Always On Availability Group in an existing Azure VNET and an existing Active Directory instance with BYOL Image
 
 This template will create a SQL Server 2014 Always On Availability Group using the PowerShell DSC Extension in an existing Azure Virtual Network and Active Directory environment.
 
@@ -20,7 +20,7 @@ To deploy the required Azure VNET and Active Directory infrastructure, if not al
 + 	The default settings for compute require that you have at least 9 cores of free quota to deploy.
 
 + 	The images used to create this deployment are
-	+ 	SQL Server - Latest SQL Server 2014 on Windows Server 2012 R2 Image
+	+ 	SQL Server - Latest SQL Server 2014 on Windows Server 2012 R2 Image and SQL BYOL Licencing Model
 	+ 	Witness - Latest Windows Server 2012 R2 Image
 
 + 	The image configuration is defined in variables, but the scripts that configure this deployment have only been tested with these versions and may not work on other images.
@@ -29,13 +29,14 @@ To deploy the required Azure VNET and Active Directory infrastructure, if not al
 
 Click the button below to deploy from the portal
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fsql-server-2014-alwayson-existing-vnet-and-ad%2Fazuredeploy.json" target="_blank">
+azure-quickstart-templates / sql-server-2014-alwayson-existing-vnet-and-ad / azuredeploy.json 
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/Jcabreira/azure-quickstart-templates/master/sql-server-2014-alwayson-existing-vnet-and-ad/azuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fsql-server-2014-alwayson-existing-vnet-and-ad%2Fazuredeploy.json" target="_blank">
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/Jcabreira/azure-quickstart-templates/master/sql-server-2014-alwayson-existing-vnet-and-ad/azuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2Fsql-server-2014-alwayson-existing-vnet-and-ad%2Fazuredeploy.json" target="_blank">
+<a href="http://armviz.io/#/?load=https://raw.githubusercontent.com/Jcabreira/azure-quickstart-templates/master/sql-server-2014-alwayson-existing-vnet-and-ad/azuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
@@ -46,23 +47,3 @@ You can deploy these samples directly through the Azure Portal or by using the s
 To deploy a sammple using the Azure Portal, click the **Deploy to Azure** button found in the README.md of each sample.
 
 To deploy the sample via the command line (using [Azure PowerShell or the Azure CLI](https://azure.microsoft.com/en-us/downloads/)) you can use the scripts.
-
-Simple execute the script and pass in the folder name of the sample you want to deploy.  For example:
-
-```PowerShell
-.\Deploy-AzureResourceGroup.ps1 -ResourceGroupLocation 'eastus' -ArtifactsStagingDirectory '[foldername]'
-```
-```bash
-azure-group-deploy.sh -a [foldername] -l eastus -u
-```
-If the sample has artifacts that need to be "staged" for deployment (Configuration Scripts, Nested Templates, DSC Packages) then set the upload switch on the command.
-You can optionally specify a storage account to use, if so the storage account must already exist within the subscription.  If you don't want to specify a storage account
-one will be created by the script or reused if it already exists (think of this as "temp" storage for AzureRM).
-
-```PowerShell
-.\Deploy-AzureResourceGroup.ps1 -ResourceGroupLocation 'eastus' -ArtifactsStagingDirectory '201-vm-custom-script-windows' -UploadArtifacts 
-```
-```bash
-azure-group-deploy.sh -a '201-vm-custom-script-windows' -l eastus -u
-```
-Tags: ``cluster, ha, sql, alwayson``
