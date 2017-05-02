@@ -59,7 +59,7 @@
     "sqlAOPrepareConfigurationFunction": "PrepareAlwaysOnSqlServer.ps1\\PrepareAlwaysOnSqlServer",
     "createClusterModulesURL": "[concat(parameters('_artifactsLocation'),'/dsc/create-failover-cluster.ps1.zip',parameters('_artifactsLocationSasToken'))]",
     "createClusterConfigurationFunction": "CreateFailoverCluster.ps1\\CreateFailoverCluster",
-    "clusterName": "[concat(parameters('namePrefix'),'-c')]"
+    "clusterName": "[concat(parameters('namePrefix'),'clt')]"
   },
   "resources": [
     {
