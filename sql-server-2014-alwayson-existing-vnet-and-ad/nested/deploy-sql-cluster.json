@@ -68,7 +68,7 @@
 		"apiVersionStorage": "2015-06-15",
 		"sqlDiskSize": 1000,
 		"sqlWitnessDiskSize": 128,
-		"sqlNamePrefix": "[concat(parameters('namePrefix'),'-sql-')]",
+		"sqlNamePrefix": "[concat(parameters('namePrefix'),'sql')]",
 		"sqlAvailabilitySetName": "[concat(variables('sqlNamePrefix'),'as')]",
 		"sqlLBName": "[concat(variables('sqlNamePrefix'),'ilb')]",
 		"sqllbID": "[resourceId('Microsoft.Network/loadBalancers',variables('sqlLBName'))]",
