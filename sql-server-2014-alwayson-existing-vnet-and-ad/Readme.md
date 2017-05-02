@@ -1,4 +1,4 @@
-# Create a SQL Server 2014 Always On Availability Group in an existing Azure VNET and an existing Active Directory instance with BYOL Image
+# Create a SQL Server 2014 Always On Availability Group in an existing Azure VNET and an existing Active Directory instance with SQL BYOL Image
 
 This template will create a SQL Server 2014 Always On Availability Group using the PowerShell DSC Extension in an existing Azure Virtual Network and Active Directory environment.
 
