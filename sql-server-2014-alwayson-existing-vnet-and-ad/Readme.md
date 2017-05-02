@@ -30,20 +30,14 @@ To deploy the required Azure VNET and Active Directory infrastructure, if not al
 Click the button below to deploy from the portal
 
 azure-quickstart-templates / sql-server-2014-alwayson-existing-vnet-and-ad / azuredeploy.json 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/Jcabreira/azure-quickstart-templates/master/sql-server-2014-alwayson-existing-vnet-and-ad/azuredeploy.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FJcabreira%2Fazure-quickstart-templates%2Fmaster%2Fsql-server-2014-alwayson-existing-vnet-and-ad%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
-<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/Jcabreira/azure-quickstart-templates/master/sql-server-2014-alwayson-existing-vnet-and-ad/azuredeploy.json" target="_blank">
+<a href="https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FJcabreira%2Fazure-quickstart-templates%2Fmaster%2Fsql-server-2014-alwayson-existing-vnet-and-ad%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
-<a href="http://armviz.io/#/?load=https://raw.githubusercontent.com/Jcabreira/azure-quickstart-templates/master/sql-server-2014-alwayson-existing-vnet-and-ad/azuredeploy.json" target="_blank">
+<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FJcabreira%2Fazure-quickstart-templates%2Fmaster%2Fsql-server-2014-alwayson-existing-vnet-and-ad%2Fazuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
-## Deploying Sample Templates
 
-You can deploy these samples directly through the Azure Portal or by using the scripts supplied in the root of the repo.
-
-To deploy a sammple using the Azure Portal, click the **Deploy to Azure** button found in the README.md of each sample.
-
-To deploy the sample via the command line (using [Azure PowerShell or the Azure CLI](https://azure.microsoft.com/en-us/downloads/)) you can use the scripts.
